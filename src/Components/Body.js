@@ -1,27 +1,52 @@
 import React, { useState } from "react";
-import { restrauntlist } from "../Config.js";
-import RestrauntCard from './RestronantCard';
+import { restaurantList } from "./Config.js";
+import RestrauntCard from "./RestronantCard";
+
+function filterData(searchText, restraunts) {
+  const filterData = restraunts.filter((restraunts) =>
+    restraunt.data.name.includes(searchText)
+  );
+  return filterData();
+}
 
 const Body = () => {
-  const [searchText, setsearchText] = useState("Al Baik");
+  const [searchText, setsearchText] = useState("");
+  const [searchRest, setsearchRest] = useState();
   return (
     <>
-    <div className="search-container">
-      <input
-      type="text"
-      className="search-input" 
-      placeholder="Search"
-      value={searchText}
-      onChange={(e)=>{
-        setsearchText(e.target.value)
-      }}
-     
-      />
-        <p>{searchText}</p>
-
-    </div>
       <div className="search-container">
-        <input type="text" className="search-input" placeholder="Search" value={}/>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search"
+          value={searchText}
+          onChange={(e) => {
+            setsearchText(e.target.value);
+          }}
+        />
+        <button
+          className="search-btn"
+          onClick={() => {
+            const data = filterData(searchText, restrauntlist);
+            setsearchRest(data);
+          }}
+        >
+          Search
+        </button>
+      </div>
+      <div className="search-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search"
+          value={user.name}
+          onChange={(e) =>
+            setUser({
+              ...user,
+              name: e.target.value,
+            })
+          }
+        />
       </div>
       <div className="restarurant-List">
         {restrautList.mp((restrurant) => {

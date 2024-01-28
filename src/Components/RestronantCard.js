@@ -1,5 +1,4 @@
-import { IMG_CDN_URL } from "../Config";
-import { restrautList } from "../Config";
+import { IMG_CDN_URL, restaurantList } from "./Config";
 
 const RestrauntCard = ({
   name,
