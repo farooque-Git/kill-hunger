@@ -1,0 +1,30 @@
+body {
+  margin: 0.2px;
+  padding: 0.4px;
+}
+.nav-bar {
+  display: flex;
+  padding-left: 35px;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  font-weight: bold;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo {
+  color: rgb(225, 225, 89);
+}
+
+.nav-list {
+  color: rgb(160, 191, 191);
+  display: flex;
+  list-style-type: none;
+  padding-right: 15px;
+}
+.nav-list > li {
+  padding: 10px;
+}
+.nav-list li:hover {
+  color: rgb(53, 139, 139);
+}
