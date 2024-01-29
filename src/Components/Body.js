@@ -11,7 +11,18 @@ function filterData(searchText, restraunts) {
 
 const Body = () => {
   const [searchText, setsearchText] = useState("");
-  const [searchRest, setsearchRest] = useState();
+  const [restaurants, setrestaurants] = useState(restaurantList);
+
+
+useEffect (()=>{
+  //API call
+  fetch("")
+},[searchText])
+
+async function getRestraunt() {
+  const data = await fetch("")
+}
+
   return (
     <>
       <div className="search-container">
@@ -21,7 +32,7 @@ const Body = () => {
           placeholder="Search"
           value={searchText}
           onChange={(e) => {
-            setsearchText(e.target.value);
+            setsearchText(e.target.value)
           }}
         />
         <button
