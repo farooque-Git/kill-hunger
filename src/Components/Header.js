@@ -30,7 +30,7 @@ const Header = () => {
       <div className="nav-items">
         <ul className="flex py-10">
           <li className="px-2">
-            <Link to="/">HOME</Link>
+            <Link to="/">Home</Link>
           </li>
 
           <Link to="/about">
