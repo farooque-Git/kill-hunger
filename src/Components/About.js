@@ -28,9 +28,7 @@ class About extends Component {
           )}
         </UserContext.Consumer>
 
-        <p>
-          This is the Namaste React Live Course Chapter 07 - Finding the Path 🚀
-        </p>
+        <p>This is made by Farooque Ali.</p>
         <Profile />
       </div>
     );

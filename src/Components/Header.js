@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import Logo from "../assets/img/foodvilla.png";
+import Logo from "../Image/cover.jpg";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
@@ -61,7 +61,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// id your use export before variable like - export const Header (), This is call default export
-// then you have to import in app.js or where you wanna import
-//you can use im a curly bracket like - import {} from "./" so on so on. this is call NAMED export

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import React from "react";
 
 const Profile = (props) => {
   const [count, setCount] = useState(0);
@@ -7,7 +6,7 @@ const Profile = (props) => {
   useEffect(() => {
     // API Call
     const timer = setInterval(() => {
-      console.log("NAMASTE REACT OP ");
+      console.log("Kill Hunger ");
     }, 1000);
     console.log("useEffect");
 
@@ -20,7 +19,7 @@ const Profile = (props) => {
 
   return (
     <div>
-      <h2>Porofile Component</h2>
+      <h2>Profile Component</h2>
       <h3>Name: {props.name}</h3>
       <h3>Count: {count}</h3>
       <button
